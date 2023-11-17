@@ -2,6 +2,8 @@
 
 start.spring.io 에서 web 하나만 추가해서 프로젝트 다운로드해서 아래에 적은 내용들을 따라해보자.
 
+(예제의 전체 코드는 [github.com/chagchagchag/kotlin-study-archive/kopring/example-code/jib_example](https://github.com/chagchagchag/kotlin-study-archive/tree/main/kopring/example-code/jib_example) 에 있다.)
+
 <br>
 
 
