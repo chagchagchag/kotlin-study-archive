@@ -236,5 +236,14 @@ jib {
 
 
 
+참고자료
 
+- [github.com/jib/jib-gradle-plugin](https://github.com/GoogleContainerTools/jib/tree/master/jib-gradle-plugin)
+- [github.com/GoogleContainerTools/jib](https://github.com/GoogleContainerTools/jib)
+- [jib 란? (+M1 Mac 에서 빌드하기 & Kotlin DSL)](https://bluayer.com/51)
+- [jib를 이용한 자바 앱 컨테이너화](https://alden-kang.tistory.com/1)
+- [spring + kotlin + gradle 환경에서 jib docker 적용](https://velog.io/@jaycee/Jib-docker-build-%EC%A0%81%EC%9A%A9)
+- [Spring Boot Application 을 Docker Image 로 생성하기 - 3. jib plugin 을 활용 + 배포](https://browndwarf.tistory.com/49)
+- [w. github action](https://popawaw.tistory.com/338)
+- [Spring Boot - 도커 이미지 빌드 및 도커 이미지 docker hub 로 push](https://4wxyz.tistory.com/entry/Spring-Boot-%EB%8F%84%EC%BB%A4-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EB%B9%8C%EB%93%9C-%EB%B0%8F-%EB%8F%84%EC%BB%A4-%EC%9D%B4%EB%AF%B8%EC%A7%80-dockerhub%EB%A1%9C-push)
 
