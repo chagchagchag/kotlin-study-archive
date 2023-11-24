@@ -1,0 +1,29 @@
+server:
+  shutdown: graceful
+  port: 8089
+spring:
+  config:
+    import:
+      - classpath:feign-clients.yml
+
+external:
+  api:
+    placeHolder: https://jsonplaceholder.typicode.com
+
+internal:
+  api:
+    user: http://localhost:8089
+
+---
+spring:
+  config:
+    activate:
+      on-profile: wiremock
+
+external:
+  api:
+    placeHolder: https://jsonplaceholder.typicode.com
+
+internal:
+  api:
+    user: http://localhost:8089
