@@ -19,7 +19,8 @@ import org.springframework.web.bind.annotation.RequestBody
 import java.util.*
 
 @FeignClient(
-    value = "user", url = "\${internal-api.user}"
+    value = "user",
+    url = "\${internal-api.user}"
 )
 @PropertySource("classpath:feign-clients.yml")
 interface UserFeignClient {

@@ -1,5 +1,4 @@
-external-api:
-  placeholder: https://jsonplaceholder.typicode.com
+external-api.placeholder: https://jsonplaceholder.typicode.com
 
 internal-api.user: http://localhost:8089
 
@@ -9,7 +8,6 @@ spring:
     activate:
       on-profile: wiremock
 
-external-api:
-  placeholder: https://jsonplaceholder.typicode.com
+external-api.placeholder: https://jsonplaceholder.typicode.com
 
 internal-api.user: http://localhost:8089
