@@ -1,7 +1,6 @@
 package com.example.demo_feign_client.feign.client.user
 
 import com.example.demo_feign_client.feign.AbstractUserFeignClientIntegrationTest
-import com.example.demo_feign_client.feign.client.UserFeignClient
 import com.example.demo_feign_client.fixtures.UserCreateRequestFixture
 import org.junit.jupiter.api.DisplayName
 import org.junit.jupiter.api.Test

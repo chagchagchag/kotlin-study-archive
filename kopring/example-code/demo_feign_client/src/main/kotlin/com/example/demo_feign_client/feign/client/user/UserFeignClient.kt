@@ -1,4 +1,4 @@
-package com.example.demo_feign_client.feign.client
+package com.example.demo_feign_client.feign.client.user
 
 import com.example.demo_feign_client.valueobject.UserCreateRequest
 import com.example.demo_feign_client.valueobject.UserCreateResponse

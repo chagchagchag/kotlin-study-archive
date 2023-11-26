@@ -7,16 +7,21 @@ import org.springframework.test.context.ContextConfiguration
 import org.springframework.test.context.TestPropertySource
 import org.springframework.test.context.junit.jupiter.SpringExtension
 
-///// 사용자 정의 어노테이션 (src/test/kotlin/com/example.demo_feign_client.feign.config 참고)
+/** 1) 사용자 정의 어노테이션
+ *  (src/test/kotlin/com/example.demo_feign_client.feign.config 참고)
+ *  - FeignUserTestContextConfiguration
+ *  - AutoConfigureTestFeign
+ *  2) Spring Layer
+ *  3) Properties
+ **/
+
+// -- 1) 사용자 정의 어노테이션
 @ContextConfiguration(classes = [
     FeignUserTestContextConfiguration::class,
 ])
 @AutoConfigureTestFeign
-///// Spring 어노테이션
+// -- 2) Spring Layer
 @ExtendWith(SpringExtension::class)
-///// Property Source (Test)
-@TestPropertySource(
-    locations = ["classpath:feign-clients.yml"]
-)
-abstract class AbstractUserFeignClientIntegrationTest {
-}
+// -- 3) Properties
+@TestPropertySource(locations = ["classpath:feign-clients.yml"])
+abstract class AbstractUserFeignClientIntegrationTest
