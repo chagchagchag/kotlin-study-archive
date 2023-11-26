@@ -7,7 +7,7 @@ import org.junit.jupiter.api.DisplayName
 import org.junit.jupiter.api.Test
 import org.springframework.beans.factory.annotation.Autowired
 
-internal class UserFeignClientTest : AbstractUserFeignClientIntegrationTest() {
+internal class UserFeignClientIntegrationTest : AbstractUserFeignClientIntegrationTest() {
 
     @Autowired
     private lateinit var userFeignClient: UserFeignClient
