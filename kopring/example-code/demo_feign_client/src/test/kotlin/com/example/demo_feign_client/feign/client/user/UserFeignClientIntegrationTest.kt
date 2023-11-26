@@ -1,4 +1,4 @@
-package com.example.demo_feign_client.feign.user
+package com.example.demo_feign_client.feign.client.user
 
 import com.example.demo_feign_client.feign.AbstractUserFeignClientIntegrationTest
 import com.example.demo_feign_client.feign.client.UserFeignClient
