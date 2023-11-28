@@ -1,4 +1,4 @@
-package com.example.demo_feign_client.feign.client
+package com.example.demo_feign_client.feign.client.user
 
 import com.example.demo_feign_client.valueobject.UserCreateRequest
 import com.example.demo_feign_client.valueobject.UserCreateResponse
@@ -9,6 +9,7 @@ import feign.FeignException
 import feign.Response
 import org.slf4j.LoggerFactory
 import org.springframework.cloud.openfeign.FeignClient
+import org.springframework.context.annotation.PropertySource
 import org.springframework.http.HttpStatus
 import org.springframework.stereotype.Component
 import org.springframework.web.bind.annotation.GetMapping
@@ -18,14 +19,16 @@ import org.springframework.web.bind.annotation.RequestBody
 import java.util.*
 
 @FeignClient(
-    value = "user", url = "\${internal.api.user}"
+    value = "user",
+    url = "\${internal-api.user}"
 )
+@PropertySource("classpath:feign-clients.yml")
 interface UserFeignClient {
     @GetMapping("/user/{id}")
     fun getUser(@PathVariable("id") id : UUID): Response
 
     @PostMapping("/user")
-    fun post(@RequestBody userCreateRequest: UserCreateRequest): Response
+    fun createUser(@RequestBody userCreateRequest: UserCreateRequest): Response
 }
 
 @Component
@@ -39,7 +42,7 @@ class UserFeignClientAgent(
     : UserCreateResponse {
         val response = try {
             userFeignClient
-                .post(userCreateRequest)
+                .createUser(userCreateRequest)
                 .throwExceptionIfBadStatus()
         } catch (feignException: FeignException){
             throw IllegalStateException(feignException)
@@ -48,7 +51,7 @@ class UserFeignClientAgent(
         val responseBody = String(response.body().asInputStream().readAllBytes())
         logger.info("""
             >>> 
-            request ::: ${response.request()}
+            request ::: ${response.request()}, 
             response ::: $responseBody 
         """.trimIndent())
 
@@ -68,7 +71,7 @@ class UserFeignClientAgent(
         val responseBody = String(response.body().asInputStream().readAllBytes())
         logger.info("""
             >>> 
-            request ::: ${response.request()}
+            request ::: ${response.request()},
             response ::: $responseBody 
         """.trimIndent())
 
