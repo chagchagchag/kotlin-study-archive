@@ -60,6 +60,10 @@ wiremock 공식 github https://github.com/wiremock  에 등록된 리포지터�
 
 ### wiremock 관련 주요 자료 모음
 
+주관적이지만 가장 이해가 쉬웠던 자료 순으로 나열<br>
+
+<br>
+
 **github/wiremock/wiremock**
 
 - 공식 github
@@ -77,7 +81,7 @@ wiremock 공식 github https://github.com/wiremock  에 등록된 리포지터�
 **[docs.spring.io](http://docs.spring.io) - Spring Cloud Contract Reference Documentation**
 
 - 스프링 공식 도큐먼트 찾아보는 법 다들 아시죠?
-- ([spring.io](http://spring.io) > Projects > Spring Cloud Contract > Learn > 버전 선택)
+- ([spring.io](http://spring.io) \> Projects \> Spring Cloud \> Spring Cloud Contract \> Learn \> 버전 선택)
 - https://docs.spring.io/spring-cloud-contract/docs/current/reference/html/
 
 <br>
