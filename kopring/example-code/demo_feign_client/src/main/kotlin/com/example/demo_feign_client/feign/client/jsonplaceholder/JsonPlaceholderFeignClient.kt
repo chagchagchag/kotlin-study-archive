@@ -75,7 +75,7 @@ class JsonPlaceholderFeignClientAgent (
             response ::: $serialized
         """.trimIndent())
 
-        return objectMapper.readValue<List<PostReadResponse>>(serialized)
+        return objectMapper.readValue(serialized)
     }
 
 }

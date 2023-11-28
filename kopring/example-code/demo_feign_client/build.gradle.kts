@@ -26,6 +26,7 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.springframework.cloud:spring-cloud-starter-openfeign")
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
+	implementation("org.springframework.cloud:spring-cloud-contract-wiremock")
 	annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
