@@ -12,7 +12,7 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.MOCK)
 @DirtiesContext
 @AutoConfigureMessageVerifier
-class ContractBaseTestClass {
+class EvenOddContractBaseTestClass {
 
     @Autowired
     lateinit var evenOddController: EvenOddController

@@ -39,7 +39,8 @@ dependencyManagement {
 contracts {
 	contractsDslDir = file("/src/test/resources/contracts")
 //	packageWithBaseClasses = "com.demo.spring_cloud_contract.demo_contract_producer.contracts"
-	baseClassForTests.set("com.demo.spring_cloud_contract.demo_contract_producer.contracts.ContractBaseTestClass")
+	baseClassForTests.set("com.demo.spring_cloud_contract.demo_contract_producer.contracts.EvenOddContractBaseTestClass")
+//	generatedTestJavaSourcesDir.set(file("/build/generated-test-sources/contractTest/java/com.demo.spring_cloud_contract.demo_contract_producer.contracts"))
 //	baseClassMappings {
 //		baseClassMapping(
 //			".*contracts.*",
@@ -63,7 +64,3 @@ tasks.withType<Test> {
 tasks.contractTest {
 	useJUnitPlatform()
 }
-
-contracts {
-}
-
