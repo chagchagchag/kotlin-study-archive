@@ -2,9 +2,15 @@
 
 오늘 예제의 목적은 Spring Cloud Contract Producer 가 뭔지 파악하는 짧은 예제와 설명을 정리해두는 것이 목적!!<br>
 
-Spring Cloud Contract Producer 는 REST API 를 만들었을 때 이 것의 명세를 여러 케이스로 분류한 Contract 를 groovy 등의 코드로 만든 후<br>
+어떤 기능의 추가를 위해 REST API 를 만들었을 때 <br>
 
-이것을 Gradle 빌드 태스크를 통해 Java 테스트 클래스로 만들어낸다.<br>
+Spring Cloud Contract Producer 를 사용해서 REST API 계층을 테스트 한다면<br>
+
+이 것의 명세를 여러 케이스로 분류한 Contract 를 groovy 등의 코드로 만든 후<br>
+
+이것을 Gradle 빌드 태스크를 통해 Java 테스트 클래스로 만들어내는 과정을 거친다.<br>
+
+<br>
 
 이렇게하면 테스트 코드를 직접 남길 때 예외코드는 어떻고, 코드의 공백은 어떻고 저떻고 하는 차별점들이 Groovy 기반의 Contract로 명세화되고 세부적인 테스트 코드의 실행은 자동으로 만들어진 코드를 사용하면 되기에 조금은 테스트 코드의 관리가 편리해지는 장점이 있다.<br>
 
