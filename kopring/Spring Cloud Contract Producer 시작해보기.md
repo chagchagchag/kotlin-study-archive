@@ -1,30 +1,18 @@
 ## Spring Cloud Contract Producer 시작해보기
 
-이것 까지 테스트를 직접 해보기에는 시간이 그리 많은건 아닌데 이거 해보느라 조금 시간이 많이 들었다 흐어어..<br>
+오늘 예제의 목적은 Spring Cloud Contract Producer 가 뭔지 파악하는 짧은 예제와 설명을 정리해두는 것이 목적!!<br>
 
-일단 오늘 해본것들 과정들을 정리!!<br>
+Spring Cloud Contract Producer 는 REST API 를 만들었을 때 이 것의 명세를 여러 케이스로 분류한 Contract 를 groovy 등의 코드로 만든 후<br>
 
+이것을 Gradle 빌드 태스크를 통해 Java 테스트 클래스로 만들어낸다.<br>
 
+이렇게하면 테스트 코드를 직접 남길 때 예외코드는 어떻고, 코드의 공백은 어떻고 저떻고 하는 차별점들이 Groovy 기반의 Contract로 명세화되고 세부적인 테스트 코드의 실행은 자동으로 만들어진 코드를 사용하면 되기에 조금은 테스트 코드의 관리가 편리해지는 장점이 있다.<br>
 
-Spring Cloud Contract 는 Producer 기반, Consumer 기반으로 테스트해볼 수 있다.<br>
-
-나 역시도 아직은 Spring Cloud Contract 내의 여러가지 기능들에 대해서는 아무것도 알고 있지 않은 상태인데,<br>
-
-일단 예제를 돌려보면 조금씩 파악이 될 것 같아서 직접 예제를 만들어보기를 시작했다.<br>
-
-이번 예제는 Spring Cloud Contract 를 Producer 기반으로 테스트하는 예제다.<br>
-
-다음번 예제로는 Spring Cloud Contract를 Consumer 기반으로 테스트 하는 예제 역시 작성예정<br>
+> 참고)<br>
+>
+> 참고로 조금 뒤에 정리하게 될 Spring Cloud Contract Consumer 의 목적은 현재 애플리케이션 내에서 RestTemplate, FeignClient 등을 통해 외부 API를 호출하는 부분이 있을 때 이런 부분을 테스트하는 목적이다. Spring Cloud Contract Consumer 는 Stub Runner 와 함께 사용한다.
 
 <br>
-
-
-
-오늘 문서의 목적은 처음 시작해볼때 어떻게 해야하고 어떤게 안됐었는지를 정리하는것이 목적이다.<br>
-
-언제든지 다시 까먹을 날이 올거라고 생각해서 미래의 나에게 남겨두는 제갈공명의 쪽지 같은 그런개념인듯 ㅋㅋ<br>
-
-<Br>
 
 
 
@@ -125,6 +113,12 @@ public class ContractVerifierTest extends EvenOddContractBaseTestClass {
 
 다만 RestDocs 와 같은 테스트 기반의 문서는 직접 작성해줘야 한다는 고통스러움은 아직 남아있긴 하다.<br>
 
+물론, RestDocs 와 함께 Spring Cloud Contract 를 사용하는 방법에 대한 문서 역시 존재한다. Rest Docs 와 Spring Cloud Contract 를 함께 사용하는 것에 대한 예제는 추후 다음 문서에서 정리해볼 예정. 
+
+> 참고: [Spring Cloud Contract with Rest Docs 2.4.0](https://github.com/spring-cloud-samples/spring-cloud-contract-samples/blob/main/docs/tutorials/rest_docs.adoc)
+
+
+
 <br>
 
 
@@ -143,6 +137,8 @@ public class ContractVerifierTest extends EvenOddContractBaseTestClass {
 - [Spring Cloud Contract 를 배워보자](https://blog.moo-ou.cc/15)
 
 - [github.com/spring-cloud-samples/spring-cloud-contract-samples/producer_kotlin](https://github.com/spring-cloud-samples/spring-cloud-contract-samples/tree/main/producer_kotlin)
+
+- 참고 : [Spring Cloud Contract with Rest Docs 2.4.0](https://github.com/spring-cloud-samples/spring-cloud-contract-samples/blob/main/docs/tutorials/rest_docs.adoc)
 
 <br>
 
