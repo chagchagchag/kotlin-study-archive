@@ -14,7 +14,7 @@ Spring Cloud Contract Wiremock 에서 채택하고 있는 wiremock 라이브러�
 
 - com.github.tomakehurst.wiremock
 
-- https://mvnrepository.com/artifact/com.github.tomakehurst/wiremock .
+- https://mvnrepository.com/artifact/com.github.tomakehurst/wiremock 
 
 <br>
 
