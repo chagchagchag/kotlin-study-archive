@@ -1,0 +1,5 @@
+services:
+  foobar-jib-env-variables-demo:
+    image: chagchagchag/foobar-jib-env-variables-demo
+    environment:
+      DOCKER_SPRING_PROFILES_ACTIVE: docker
