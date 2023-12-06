@@ -2,7 +2,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     id("com.google.cloud.tools.jib") version "3.4.0"
-    id("org.springframework.boot") version "3.2.0"
+    id("org.springframework.boot") version "3.1.4"
     id("io.spring.dependency-management") version "1.1.4"
     kotlin("jvm") version "1.9.20"
     kotlin("plugin.spring") version "1.9.20"
@@ -20,7 +20,7 @@ repositories {
     maven { url = uri("https://repo.spring.io/milestone") }
 }
 
-extra["springCloudVersion"] = "2023.0.0-RC1"
+extra["springCloudVersion"] = "2022.0.4"
 
 dependencies {
     implementation("org.jetbrains.kotlin:kotlin-reflect")
