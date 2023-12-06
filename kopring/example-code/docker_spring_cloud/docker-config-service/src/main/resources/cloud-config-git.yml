@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/chagchagchag/encrypted-properties-spring-cloud-prototype
+        bootstrap: true

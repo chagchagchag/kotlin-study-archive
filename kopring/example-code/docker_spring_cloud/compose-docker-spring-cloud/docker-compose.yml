@@ -1,0 +1,29 @@
+version: '3.7'
+services:
+  docker-discovery-service:
+    image: chagchagchag/docker-discovery-service
+    environment:
+      COMPOSE_SPRING_PROFILES_ACTIVE: compose
+    networks:
+      - docker-spring-cloud
+  docker-discovery-client:
+    image: chagchagchag/docker-discovery-client
+    environment:
+      COMPOSE_SPRING_PROFILES_ACTIVE: compose
+    networks:
+      - docker-spring-cloud
+  docker-config-service:
+    image: chagchagchag/docker-config-service
+    environment:
+      COMPOSE_SPRING_PROFILES_ACTIVE: compose
+    networks:
+      - docker-spring-cloud
+  docker-api-gateway-service:
+    image: chagchagchag/docker-api-gateway-service
+    environment:
+      COMPOSE_SPRING_PROFILES_ACTIVE: compose
+    networks:
+      - docker-spring-cloud
+networks:
+  docker-spring-cloud:
+    external: true

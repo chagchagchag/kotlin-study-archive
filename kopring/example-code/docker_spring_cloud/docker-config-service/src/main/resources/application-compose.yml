@@ -1,0 +1,18 @@
+server:
+  port: 9999
+spring:
+  application:
+    name: config-service
+  config:
+    import:
+      - classpath:cloud-config-git.yml
+      - classpath:local-compose-eureka.yml
+logging:
+  level:
+    root: debug
+encrypt:
+  key-store:
+    type: jks
+    location: EncryptedConfigServerKey.jks
+    alias: EncryptedConfigServerKey
+    password: asdf1234

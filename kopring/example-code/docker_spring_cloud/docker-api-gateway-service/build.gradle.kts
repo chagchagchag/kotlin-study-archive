@@ -46,7 +46,7 @@ tasks.withType<Test> {
 }
 
 jib {
-    val profile : String = project.findProperty("env") as? String ?: "local"
+    val profile : String = System.getenv("COMPOSE_SPRING_PROFILES_ACTIVE") as? String ?: "local"
 
     from {
         image = "amazoncorretto:17"
