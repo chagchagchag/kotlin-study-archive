@@ -12,6 +12,14 @@ jib 빌드를 혼자 직접 하기에는 귀찮아져서 ㅋㅋ github actions �
 
 
 
+### 깃헙 리포지터리
+
+- [github.com/chagchagchag/jib\_github\_action\_single\_module](https://github.com/chagchagchag/jib_github_action_single_module)
+
+<br>
+
+
+
 ### 비공개 데이터를 github action 에서 사용할 때
 
 - Github Repository → Settings → Secrets 활용
